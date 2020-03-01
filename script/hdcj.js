@@ -4,7 +4,7 @@
 制作者：t.me/makexp
 
 Surge
-http-request ^https:\/\/new\.api\.hdcj\.9w9\.com\/api\/sign\/sign requires-body=1,max-size=0,script-path=hdcj.js
+http-request ^https:\/\/new\.api\.hdcj\.9w9\.com\/api\/sign\/sign requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/banditlives/helpless/master/script/hdcj.js
 
 QX
 [task_local]
