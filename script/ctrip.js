@@ -1,9 +1,8 @@
 /*
 mimt:m.ctrip.com
 
-https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo url script-request-header ctrip_cookie.js
-
-0 0 * * * ctrip.js
+ctrip.cookie = requires-body=true,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ctrip_cookie.js,type=http-request,pattern=^https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo
+携程旅行 = script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ctrip.js,type=cron,cronexp=10 0 0 * * *
 cookie获取
 需要在携程app内获得
 点击"我的",然后点击"我的积分",再点击下面的"签到.任务"即可
