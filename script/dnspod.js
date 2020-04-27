@@ -4,7 +4,7 @@
 [Host]
 iosapps.itunes.apple.com = script:dnspod
 [Script]
-dns dnspod script-path=https://raw.githubusercontent.com/maicoo-l/Surge/master/Script/dnspod.js,script-update-interval=-1
+dns dnspod script-path=https://raw.githubusercontent.com/banditlives/helpless/master/script/dnspod.js,script-update-interval=-1
 */
 
 const url = 'http://119.29.29.29/d?dn=' + $domain;
