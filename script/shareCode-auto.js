@@ -13,7 +13,7 @@ const shareCodes = [
     mc: $.getdata("mc_shareCode1") || "MTAxODc2NTE0NzAwMDAwMDAyOTI4OTIyMw==",
     ddgc: $.getdata("dd_shareCode1") || "P04z54XCjVWnYaS5mdZVjShmSAT08zO",
     jxgc: $.getdata("jx_shareCode1") || "2vJZl5kSkX40DIooT0NPYg==/",
-	jdzz: $.getdata("jdzz_shareCode1") || "AWWQIy_TUkWxOXSM",
+    jdzz: $.getdata("jdzz_shareCode1") || "AWWQIy_TUkWxOXSM",
   },
   {
     zd: $.getdata("zd_shareCode2") || "",
@@ -21,7 +21,7 @@ const shareCodes = [
     mc: $.getdata("mc_shareCode2") || "",
     ddgc: $.getdata("dd_shareCode2") || "",
     jxgc: $.getdata("jx_shareCode2") || "",
-	jdzz: $.getdata("jdzz_shareCode2") || "",
+    jdzz: $.getdata("jdzz_shareCode2") || "",
   },
 ];
 $.result = [];
