@@ -12,7 +12,7 @@ const shareCodes = [
     nc: $.getdata("nc_shareCode1") || "ba12775ed72a47909d3b1f844cb25234",
     mc: $.getdata("mc_shareCode1") || "MTAxODc2NTE0NzAwMDAwMDAyOTI4OTIyMw==",
     ddgc: $.getdata("dd_shareCode1") || "P04z54XCjVWnYaS5mdZVjShmSAT08zO",
-    jxgc: $.getdata("jx_shareCode1") || "2vJZl5kSkX40DIooT0NPYg==/",
+    jxgc: $.getdata("jx_shareCode1") || "2vJZl5kSkX40DIooT0NPYg==",
     jdzz: $.getdata("jdzz_shareCode1") || "AWWQIy_TUkWxOXSM",
   },
   {
