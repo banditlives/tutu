@@ -2,7 +2,7 @@
   "id": "tutu.app.sub",
   "name": "tutu应用订阅",
   "author": "@tutu",
-  "icon": "https://avatars2.githubusercontent.com/u/22700758?s=88&u=26d911ccb8345dac955238c2ed6c572892ef924a&v=4",
+  "icon": "",
   "repo": "https://github.com/banditlives/helpless/tree/master/script",
   "apps": [
     {
