@@ -3,7 +3,7 @@
   "name": "tutu应用订阅",
   "author": "@tutu",
   "icon": "",
-  "repo": "https://github.com/banditlives/helpless/tree/master/script",
+  "repo": "https://github.com/banditlives/tutu/tree/master/script",
   "apps": [
     {
       "id": "shareCode",
@@ -125,8 +125,8 @@
         }
       ],
       "author": "@tutu",
-      "repo": "https://github.com/banditlives/helpless/blob/master/script/shareCode-auto.js",
-      "script": "https://raw.githubusercontent.com/banditlives/helpless/master/script/shareCode-auto.js",
+      "repo": "https://github.com/banditlives/tutu/blob/master/script/shareCode-auto.js",
+      "script": "https://raw.githubusercontent.com/banditlives/tutu/master/script/shareCode-auto.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png"
