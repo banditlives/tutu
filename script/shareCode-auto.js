@@ -3,7 +3,7 @@
  * @Github: https://github.com/whyour
  * @Date: 2020-11-20 10:42:06
  * @LastEditors: tutu
- * @LastEditTime: 2020-12-21 15:00:00
+ * @LastEditTime: 2020-12-25 08:27:00
  */
 const $ = new Env("互助码");
 const shareCodes = [
@@ -14,6 +14,7 @@ const shareCodes = [
     ddgc: $.getdata("dd_shareCode1") || "P04z54XCjVWnYaS5mdZVjShmSAT08zO",
     jxgc: $.getdata("jx_shareCode1") || "2vJZl5kSkX40DIooT0NPYg==",
     jdzz: $.getdata("jdzz_shareCode1") || "AWWQIy_TUkWxOXSM",
+    joy: $.getdata("joy_shareCode1") || "R_QEudsl4GfYN9KLdLkggA==",
   },
   {
     zd: $.getdata("zd_shareCode2") || "",
@@ -22,6 +23,7 @@ const shareCodes = [
     ddgc: $.getdata("dd_shareCode2") || "",
     jxgc: $.getdata("jx_shareCode2") || "",
     jdzz: $.getdata("jdzz_shareCode2") || "",
+    joy: $.getdata("joy_shareCode2") || "",
   },
 ];
 $.result = [];
@@ -30,7 +32,7 @@ $.random = Math.floor(Math.random() * 60);
 !(async () => {
   console.log(`\n此脚本延迟${$.random}秒执行\n`);
   for (let i = 0; i < shareCodes.length; i++) {
-    const { zd, nc, mc, ddgc, jxgc, jdzz } = shareCodes[i];
+    const { zd, nc, mc, ddgc, jxgc, jdzz, joy } = shareCodes[i];
     await $.wait($.random);
     zd &&
       (await create(
@@ -66,6 +68,12 @@ $.random = Math.floor(Math.random() * 60);
       (await create(
         `https://code.chiang.fun/api/v1/jd/jdzz/create/${jdzz}/`,
         "京东赚赚"
+      ));
+    await $.wait($.random);
+    joy &&
+      (await create(
+        `https://code.chiang.fun/api/v1/jd/jdcrazyjoy/create/${joy}/`,
+        "京东joy"
       ));
   }
   await showMsg();
