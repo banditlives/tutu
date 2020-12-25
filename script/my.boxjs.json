@@ -22,7 +22,7 @@
         "dd_shareCode2",
         "jx_shareCode2",
 	"jdzz_shareCode2",
-	"joy_shareCode2",
+	"joy_shareCode2"
       ],
       "settings": [
         {
@@ -122,7 +122,7 @@
           "val": "",
           "type": "text",
           "desc": "京东joy赚互助码.你自己的互助码."
-        },
+        }
       ],
       "author": "@tutu",
       "repo": "https://github.com/banditlives/helpless/blob/master/script/shareCode-auto.js",
