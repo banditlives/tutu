@@ -3,7 +3,7 @@
  * @Github: https://github.com/whyour
  * @Date: 2020-11-20 10:42:06
  * @LastEditors: tutu
- * @LastEditTime: 2020-12-25 08:27:00
+ * @LastEditTime: 2021-01-12 09:49:00
  */
 const $ = new Env("互助码");
 const shareCodes = [
@@ -15,6 +15,7 @@ const shareCodes = [
     jxgc: $.getdata("jx_shareCode1") || "2vJZl5kSkX40DIooT0NPYg==",
     jdzz: $.getdata("jdzz_shareCode1") || "S7KwtFEddqQ2RdVk",
     joy: $.getdata("joy_shareCode1") || "R_QEudsl4GfYN9KLdLkggA==",
+    jdcash: $.getdata("jdcash_shareCode1") || "cUppOLX2OqVgpC0",
   },
   {
     zd: $.getdata("zd_shareCode2") || "47m36n7ro5gutfnhwoqdkysprqb5k7lqr3nxicy",
@@ -24,6 +25,7 @@ const shareCodes = [
     jxgc: $.getdata("jx_shareCode2") || "tRf5NgEO6SJy355QzbUqgQ==",
     jdzz: $.getdata("jdzz_shareCode2") || "S5KkcA3pEnCCPQmWi4K9c",
     joy: $.getdata("joy_shareCode2") || "mPjsZwY-W8JhALhygtnUOQ==",
+    jdcash: $.getdata("jdcash_shareCode2") || "eU9YL4jvD4h-kxGDvytF",
   },
 ];
 $.result = [];
@@ -32,7 +34,7 @@ $.random = Math.floor(Math.random() * 60);
 !(async () => {
   console.log(`\n此脚本延迟${$.random}秒执行\n`);
   for (let i = 0; i < shareCodes.length; i++) {
-    const { zd, nc, mc, ddgc, jxgc, jdzz, joy } = shareCodes[i];
+    const { zd, nc, mc, ddgc, jxgc, jdzz, joy, jdcash } = shareCodes[i];
     await $.wait($.random);
     zd &&
       (await create(
@@ -74,6 +76,12 @@ $.random = Math.floor(Math.random() * 60);
       (await create(
         `https://code.chiang.fun/api/v1/jd/jdcrazyjoy/create/${joy}/`,
         "京东joy"
+      ));
+    await $.wait($.random);
+    jdcash &&
+      (await create(
+        `https://code.chiang.fun/api/v1/jd/jdcash/create/${joy}/`,
+        "京东签到领现金"
       ));
   }
   await showMsg();
