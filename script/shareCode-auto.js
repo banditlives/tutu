@@ -80,7 +80,7 @@ $.random = Math.floor(Math.random() * 60);
     await $.wait($.random);
     jdcash &&
       (await create(
-        `https://code.chiang.fun/api/v1/jd/jdcash/create/${joy}/`,
+        `https://code.chiang.fun/api/v1/jd/jdcash/create/${jdcash}/`,
         "京东签到领现金"
       ));
   }
